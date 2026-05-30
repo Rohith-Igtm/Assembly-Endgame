@@ -1,16 +1,41 @@
-# React + Vite
+# Assembly: Endgame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React word-guessing game where the player must guess the hidden word before too many programming languages are lost to Assembly.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Assembly: Endgame is a small React game inspired by classic word-guessing games. The player guesses letters using an on-screen keyboard. Correct guesses reveal letters in the hidden word, while incorrect guesses remove programming languages one by one.
 
-## React Compiler
+The goal is to guess the full word before the game is lost.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Interactive alphabet keyboard
+- Tracks guessed letters
+- Shows correct and wrong guesses with different button colors
+- Displays hidden word letters as the player guesses correctly
+- Counts incorrect guesses
+- Marks programming languages as "lost" after wrong guesses
+- Shows win/loss game status
+- New game button after the game ends
+- Random word selection
+- Farewell message when a language is lost
+- Confetti effect when the player wins
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Built With
+
+- React
+- JavaScript
+- CSS
+- clsx
+- react-confetti-boom
+
+## Project Structure
+
+```txt
+src/
+├── App.jsx
+├── index.css
+├── language.js
+├── utils.js
+└── main.jsx
